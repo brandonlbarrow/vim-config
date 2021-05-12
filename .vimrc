@@ -48,6 +48,17 @@ let g:syntastic_check_on_wq = 0
 "let g:go_info_mode='gopls'"
 
 let g:syntastic_go_checkers = ["gofmt"]
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_format_strings = 1
+let g:go_higlight_variable_declarations = 1
+let g:go_highlight_variable_assignments = 1
+
 
 
 " -------------------------------------------------------------------------------------------------
@@ -116,3 +127,6 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+
+hi! CocErrorSign ctermfg=Red ctermbg=Black guibg=#f00000
