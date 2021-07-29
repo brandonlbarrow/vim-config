@@ -30,6 +30,9 @@ set showcmd
 set incsearch
 set hlsearch
 set backspace=indent,eol,start
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Encoding
 set encoding=utf8
