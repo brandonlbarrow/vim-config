@@ -16,7 +16,7 @@ filetype plugin indent on
 syntax on
 set nowrap
 set ruler
-set number
+"set number
 set showcmd
 set incsearch
 set hlsearch
@@ -24,6 +24,16 @@ set backspace=indent,eol,start
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Copy and paste from the clipboard
+noremap <leader>y "+y
+noremap <leader>p "+p
+
+"case insensitive in command-line-mode
+set wildignorecase
+
+" file type indentation awareness
+filetype plugin indent on
 
 " Encoding
 set encoding=utf8
@@ -59,6 +69,6 @@ let g:go_highlight_variable_assignments = 1
 
 " Autocomplete 
 setlocal omnifunc=go#complete#Complete
-au filetype go inoremap <buffer> . .<C-x><C-o>
+"au filetype go inoremap <buffer> . .<C-x><C-o>
 
 
